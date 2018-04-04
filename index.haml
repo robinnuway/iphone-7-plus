@@ -1,0 +1,41 @@
+-# Made by Robin Savemark
+
+%div{:class => "iphone", :id => "iphone"}
+	%div{:class => "iphone_camera"}
+	%div{:class => "iphone_ear-speaker"}
+		%div{:class => "iphone_ear-speaker-side"}
+	%div{:class => "iphone_overlay"}
+	%div{:class => "iphone_screen", :id => "screen"}
+		%ul{:class => "iphone_screen-signal"}
+			- (1..5).each do |i|
+				%li
+		%span{:class => "iphone_screen-operator"} 
+			Tele2 
+			%span{:id => "internet"}
+		%span{:class => "iphone_screen-lock"}
+			%i{:class => "fa fa-lock"}
+		%div{:class => "iphone_screen-time", :id => "time"}
+		%div{:class => "iphone_screen-date", :id => "date"}
+		%span{:class => "iphone_screen-battery", :id => "battery"}
+			97%
+			%i{:class => "fa fa-battery-full"}
+		%ul{:class => "iphone_screen-text"}
+			- (1..3).each do |i|
+				%li
+					%i{:class => "fa fa-camera"}
+	%div{:class => "iphone_home", :id => "home"}
+	%div{:class => "iphone_silent-mode"}
+		%div{:class => "iphone_silent-mode-side"}
+	%ul{:class => "iphone_sound"}
+		- (1..2).each do |i|
+			%li
+	%ul{:class => "iphone_bottom-right-speaker"}
+		- (1..8).each do |i|
+			%li
+	%div{:class => "iphone_bottom-middle-charge"}
+		- (1..2).each do |i|
+			%span
+	%ul{:class => "iphone_bottom-left-speaker"}
+		- (1..8).each do |i|
+			%li
+-# %div{:class => "iphone_text", :id => "text"} Hover me
